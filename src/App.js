@@ -3,6 +3,7 @@
 import React from 'react';
 import Header from './components/Header';
 import StreamList from './components/StreamList';
+import './App.css';
 
 function App() {
     return (

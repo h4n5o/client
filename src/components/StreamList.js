@@ -7,7 +7,7 @@ const StreamList = () => {
 
     useEffect(() => {
         // Hier anstelle von 'http://localhost:3001/api/streams' deine API-URL verwenden
-        axios.get("client/src/components/StreamList.js")
+        axios.get("http://localhost:3001/api/streams")
             .then(response => {
                 setStreams(response.data);
             })
