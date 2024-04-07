@@ -1,4 +1,3 @@
-// client/src/components/StreamList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -6,8 +5,8 @@ const StreamList = () => {
     const [streams, setStreams] = useState([]);
 
     useEffect(() => {
-        // Hier anstelle von 'http://localhost:3001/api/streams' deine API-URL verwenden
-        axios.get("http://localhost:3001/api/streams")
+        // Hier die korrekte API-URL verwenden (Port 3000)
+        axios.get("http://localhost:3000/api/streams")
             .then(response => {
                 setStreams(response.data);
             })
